@@ -12,12 +12,16 @@ class LaunchViewController: UIViewController {
 
     @IBOutlet weak var circleView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var circleWidth: NSLayoutConstraint!
     
     //MARK: VC Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupLabel()
         self.setupCircle()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         self.animateCircle()
     }
     
@@ -35,8 +39,10 @@ class LaunchViewController: UIViewController {
     //MARK: Animations
     
     private func animateCircle() {
-        UIView.animate(withDuration: 1.0, animations: {
-            self.circleView.frame.size.width+=10
+        UIView.animate(withDuration: 3.0, animations: {
+            self.circleWidth.constant+=1000
+            self.view.setNeedsLayout()
+            self.view.layoutIfNeeded()
         }) { (isFinished) in
             if isFinished {
                 self.animateLabel()
@@ -45,8 +51,8 @@ class LaunchViewController: UIViewController {
     }
     
     private func animateLabel() {
-        UIView.animate(withDuration: 1.0, animations: {
-            self.titleLabel.alpha+=0.1
+        UIView.animate(withDuration: 2.0, animations: {
+            self.titleLabel.alpha+=0.4
         }) { (isFinished) in
             if isFinished {
                 self.performSegue(withIdentifier: "TapBarVCSegue", sender: nil)

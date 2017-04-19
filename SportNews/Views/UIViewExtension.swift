@@ -18,6 +18,7 @@ extension UIView {
     set {
         if newValue == true {
             self.layer.cornerRadius = self.frame.height/2
+            self.layer.masksToBounds = true
         }else {
             self.layer.cornerRadius = 0
         }
