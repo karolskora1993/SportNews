@@ -6,14 +6,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Launch View Controller-->
+        <!--Launch Screen View Controller-->
         <scene sceneID="bzQ-S7-9Wi">
             <objects>
-                <viewController id="KTs-vT-C1u" customClass="LaunchViewController" customModule="SportNews" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KTs-vT-C1u" customClass="LaunchScreenViewController" customModule="SportNews" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EkP-Wn-7ye"/>
                         <viewControllerLayoutGuide type="bottom" id="l4m-Ag-Tls"/>
@@ -22,17 +21,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8KI-Ba-5WI">
-                                <rect key="frame" x="375" y="667" width="1" height="1"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="8KI-Ba-5WI" secondAttribute="height" multiplier="1:1" id="Iqa-di-O1N"/>
-                                    <constraint firstAttribute="width" constant="1" id="wGY-q9-RKY"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SportNews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tW-9R-zV6">
                                 <rect key="frame" x="145" y="323" width="85.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -40,17 +28,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="l4m-Ag-Tls" firstAttribute="top" secondItem="8KI-Ba-5WI" secondAttribute="bottom" constant="-1" id="7MN-rB-NDa"/>
                             <constraint firstItem="3tW-9R-zV6" firstAttribute="centerX" secondItem="jry-dL-nC1" secondAttribute="centerX" id="Wbx-hv-8Cm"/>
-                            <constraint firstAttribute="trailing" secondItem="8KI-Ba-5WI" secondAttribute="trailing" constant="-1" id="r8b-Jq-o2o"/>
                             <constraint firstItem="3tW-9R-zV6" firstAttribute="centerY" secondItem="jry-dL-nC1" secondAttribute="centerY" id="zoR-fj-o0P"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="circleView" destination="8KI-Ba-5WI" id="J4Q-Jj-tIj"/>
-                        <outlet property="circleWidth" destination="wGY-q9-RKY" id="ixe-o3-hP3"/>
                         <outlet property="titleLabel" destination="3tW-9R-zV6" id="hMp-8S-LMQ"/>
                         <segue destination="bcQ-vC-15D" kind="presentation" identifier="TapBarVCSegue" id="08q-C7-XBu"/>
                     </connections>

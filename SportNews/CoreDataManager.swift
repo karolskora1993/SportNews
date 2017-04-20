@@ -14,6 +14,10 @@ class CoreDataManager: NSObject {
     
     static let shared: CoreDataManager = CoreDataManager()
     
+    lazy var context = {
+        return CoreDataManager.shared.persistentContainer.viewContext
+    }
+    
     lazy var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation

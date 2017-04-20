@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		014948A1519ED50EF4F7ABEF /* Pods_SportNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F901F00F5DC0A5F2B3704CD6 /* Pods_SportNews.framework */; };
 		188430411EA7DC2400C609DC /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188430401EA7DC2400C609DC /* UIViewExtension.swift */; };
-		188430441EA7DE7000C609DC /* LaunchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188430431EA7DE7000C609DC /* LaunchStoryboard.storyboard */; };
+		188430441EA7DE7000C609DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188430431EA7DE7000C609DC /* LaunchScreen.storyboard */; };
 		188430461EA7DEF300C609DC /* MainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188430451EA7DEF300C609DC /* MainScreen.storyboard */; };
 		188430481EA7E01800C609DC /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188430471EA7E01800C609DC /* UIColorExtension.swift */; };
 		1893B31B1EA634F1001B7675 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893B31A1EA634F1001B7675 /* AppDelegate.swift */; };
-		1893B31D1EA634F1001B7675 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893B31C1EA634F1001B7675 /* LaunchViewController.swift */; };
 		1893B3221EA634F1001B7675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1893B3211EA634F1001B7675 /* Assets.xcassets */; };
 		1893B3301EA634F1001B7675 /* SportNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893B32F1EA634F1001B7675 /* SportNewsTests.swift */; };
 		1893B33B1EA634F1001B7675 /* SportNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893B33A1EA634F1001B7675 /* SportNewsUITests.swift */; };
+		189F30621EA8DBFB001CF8B0 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189F30611EA8DBFB001CF8B0 /* LaunchScreenViewController.swift */; };
 		18C267051EA76F5400185EAD /* SportNewsDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18C267031EA76F5400185EAD /* SportNewsDataModel.xcdatamodeld */; };
 		18C267071EA7737500185EAD /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C267061EA7737500185EAD /* CoreDataManager.swift */; };
 		18F1C6AF1EA7E442002EA519 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1C6AE1EA7E442002EA519 /* UILabelExtension.swift */; };
@@ -44,12 +44,11 @@
 /* Begin PBXFileReference section */
 		0A98732B664C0518B9DFFF70 /* Pods-SportNewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportNewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SportNewsTests/Pods-SportNewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		188430401EA7DC2400C609DC /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = Views/UIViewExtension.swift; sourceTree = "<group>"; };
-		188430431EA7DE7000C609DC /* LaunchStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchStoryboard.storyboard; path = Storyboards/LaunchStoryboard.storyboard; sourceTree = "<group>"; };
+		188430431EA7DE7000C609DC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		188430451EA7DEF300C609DC /* MainScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainScreen.storyboard; path = Storyboards/MainScreen.storyboard; sourceTree = "<group>"; };
 		188430471EA7E01800C609DC /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Views/UIColorExtension.swift; sourceTree = "<group>"; };
 		1893B3171EA634F1001B7675 /* SportNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1893B31A1EA634F1001B7675 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1893B31C1EA634F1001B7675 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchViewController.swift; path = ViewControllers/LaunchViewController.swift; sourceTree = "<group>"; };
 		1893B3211EA634F1001B7675 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1893B3261EA634F1001B7675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1893B32B1EA634F1001B7675 /* SportNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +57,7 @@
 		1893B3361EA634F1001B7675 /* SportNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1893B33A1EA634F1001B7675 /* SportNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportNewsUITests.swift; sourceTree = "<group>"; };
 		1893B33C1EA634F1001B7675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		189F30611EA8DBFB001CF8B0 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaunchScreenViewController.swift; path = ViewControllers/LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		18C267041EA76F5400185EAD /* SportNewsDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SportNewsDataModel.xcdatamodel; sourceTree = "<group>"; };
 		18C267061EA7737500185EAD /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		18F1C6AE1EA7E442002EA519 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UILabelExtension.swift; path = Views/UILabelExtension.swift; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 		188430421EA7DE5200C609DC /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				188430431EA7DE7000C609DC /* LaunchStoryboard.storyboard */,
+				188430431EA7DE7000C609DC /* LaunchScreen.storyboard */,
 				188430451EA7DEF300C609DC /* MainScreen.storyboard */,
 			);
 			name = Storyboards;
@@ -184,7 +184,7 @@
 		18F1C6B01EA7E79E002EA519 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				1893B31C1EA634F1001B7675 /* LaunchViewController.swift */,
+				189F30611EA8DBFB001CF8B0 /* LaunchScreenViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -329,7 +329,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				188430441EA7DE7000C609DC /* LaunchStoryboard.storyboard in Resources */,
+				188430441EA7DE7000C609DC /* LaunchScreen.storyboard in Resources */,
 				1893B3221EA634F1001B7675 /* Assets.xcassets in Resources */,
 				188430461EA7DEF300C609DC /* MainScreen.storyboard in Resources */,
 			);
@@ -481,10 +481,10 @@
 			files = (
 				188430411EA7DC2400C609DC /* UIViewExtension.swift in Sources */,
 				18C267071EA7737500185EAD /* CoreDataManager.swift in Sources */,
-				1893B31D1EA634F1001B7675 /* LaunchViewController.swift in Sources */,
 				1893B31B1EA634F1001B7675 /* AppDelegate.swift in Sources */,
 				18F1C6AF1EA7E442002EA519 /* UILabelExtension.swift in Sources */,
 				18C267051EA76F5400185EAD /* SportNewsDataModel.xcdatamodeld in Sources */,
+				189F30621EA8DBFB001CF8B0 /* LaunchScreenViewController.swift in Sources */,
 				188430481EA7E01800C609DC /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
