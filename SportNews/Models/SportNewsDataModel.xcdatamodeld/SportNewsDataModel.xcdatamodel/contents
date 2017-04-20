@@ -1,4 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16E195" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+    <entity name="FootballCompetition" representedClassName="FootballCompetition" syncable="YES" codeGenerationType="class">
+        <attribute name="caption" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currentMatchday" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="league" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numberOfGames" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numberOfMatchdays" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numberOfTeams" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="teams" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Team" inverseName="footballCompetiton" inverseEntity="Team" syncable="YES"/>
+    </entity>
+    <entity name="Team" representedClassName="Team" syncable="YES" codeGenerationType="class">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shortName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="squadMarketValue" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="footballCompetiton" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FootballCompetition" inverseName="teams" inverseEntity="FootballCompetition" syncable="YES"/>
+        <relationship name="logo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TeamLogo" inverseName="team" inverseEntity="TeamLogo" syncable="YES"/>
+    </entity>
+    <entity name="TeamLogo" representedClassName="TeamLogo" syncable="YES" codeGenerationType="class">
+        <attribute name="crestUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="team" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="logo" inverseEntity="Team" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="FootballCompetition" positionX="-137" positionY="-4545" width="128" height="193"/>
+        <element name="Team" positionX="-299" positionY="-4473" width="128" height="133"/>
+        <element name="TeamLogo" positionX="-297" positionY="-4626" width="128" height="75"/>
+    </elements>
 </model>

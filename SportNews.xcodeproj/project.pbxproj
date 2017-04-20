@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		014948A1519ED50EF4F7ABEF /* Pods_SportNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F901F00F5DC0A5F2B3704CD6 /* Pods_SportNews.framework */; };
+		182FDDAD1EA935F600810CB9 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182FDDAC1EA935F600810CB9 /* RequestManager.swift */; };
+		182FDDAF1EA9391500810CB9 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182FDDAE1EA9391500810CB9 /* Resources.swift */; };
+		182FDDBF1EA9445F00810CB9 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182FDDBE1EA9445F00810CB9 /* ConnectionManager.swift */; };
 		188430411EA7DC2400C609DC /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188430401EA7DC2400C609DC /* UIViewExtension.swift */; };
 		188430441EA7DE7000C609DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188430431EA7DE7000C609DC /* LaunchScreen.storyboard */; };
 		188430461EA7DEF300C609DC /* MainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188430451EA7DEF300C609DC /* MainScreen.storyboard */; };
@@ -43,6 +46,9 @@
 
 /* Begin PBXFileReference section */
 		0A98732B664C0518B9DFFF70 /* Pods-SportNewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportNewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SportNewsTests/Pods-SportNewsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		182FDDAC1EA935F600810CB9 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestManager.swift; path = Models/RequestManager.swift; sourceTree = "<group>"; };
+		182FDDAE1EA9391500810CB9 /* Resources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Resources.swift; path = Models/Resources.swift; sourceTree = "<group>"; };
+		182FDDBE1EA9445F00810CB9 /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConnectionManager.swift; path = Models/ConnectionManager.swift; sourceTree = "<group>"; };
 		188430401EA7DC2400C609DC /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = Views/UIViewExtension.swift; sourceTree = "<group>"; };
 		188430431EA7DE7000C609DC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		188430451EA7DEF300C609DC /* MainScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainScreen.storyboard; path = Storyboards/MainScreen.storyboard; sourceTree = "<group>"; };
@@ -99,6 +105,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		182FDDB01EA93C7200810CB9 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				182FDDB11EA93C7B00810CB9 /* Generated */,
+				18C267031EA76F5400185EAD /* SportNewsDataModel.xcdatamodeld */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		182FDDB11EA93C7B00810CB9 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Generated;
+			sourceTree = "<group>";
+		};
 		1884303F1EA7DBEE00C609DC /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,7 +198,10 @@
 		18C267021EA76EC300185EAD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				18C267031EA76F5400185EAD /* SportNewsDataModel.xcdatamodeld */,
+				182FDDB01EA93C7200810CB9 /* CoreData */,
+				182FDDAC1EA935F600810CB9 /* RequestManager.swift */,
+				182FDDAE1EA9391500810CB9 /* Resources.swift */,
+				182FDDBE1EA9445F00810CB9 /* ConnectionManager.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -288,6 +313,7 @@
 				TargetAttributes = {
 					1893B3161EA634F1001B7675 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 3XD392WJX7;
 						ProvisioningStyle = Automatic;
 					};
 					1893B32A1EA634F1001B7675 = {
@@ -481,9 +507,12 @@
 			files = (
 				188430411EA7DC2400C609DC /* UIViewExtension.swift in Sources */,
 				18C267071EA7737500185EAD /* CoreDataManager.swift in Sources */,
+				182FDDAD1EA935F600810CB9 /* RequestManager.swift in Sources */,
 				1893B31B1EA634F1001B7675 /* AppDelegate.swift in Sources */,
 				18F1C6AF1EA7E442002EA519 /* UILabelExtension.swift in Sources */,
+				182FDDBF1EA9445F00810CB9 /* ConnectionManager.swift in Sources */,
 				18C267051EA76F5400185EAD /* SportNewsDataModel.xcdatamodeld in Sources */,
+				182FDDAF1EA9391500810CB9 /* Resources.swift in Sources */,
 				189F30621EA8DBFB001CF8B0 /* LaunchScreenViewController.swift in Sources */,
 				188430481EA7E01800C609DC /* UIColorExtension.swift in Sources */,
 			);
@@ -621,7 +650,7 @@
 			baseConfigurationReference = CAEE3D5C7BA20CD4C0464445 /* Pods-SportNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3XD392WJX7;
 				INFOPLIST_FILE = SportNews/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -636,7 +665,7 @@
 			baseConfigurationReference = D8F469C7BD4069502AB7354B /* Pods-SportNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3XD392WJX7;
 				INFOPLIST_FILE = SportNews/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
