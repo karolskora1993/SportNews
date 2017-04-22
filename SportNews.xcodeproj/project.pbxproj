@@ -21,6 +21,11 @@
 		1893B33B1EA634F1001B7675 /* SportNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893B33A1EA634F1001B7675 /* SportNewsUITests.swift */; };
 		189F30621EA8DBFB001CF8B0 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189F30611EA8DBFB001CF8B0 /* LaunchScreenViewController.swift */; };
 		18A8814C1EABD57100CB9562 /* localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18A8814E1EABD57100CB9562 /* localizable.strings */; };
+		18A881521EABD99200CB9562 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A881511EABD99200CB9562 /* Settings.storyboard */; };
+		18A881541EABD9FB00CB9562 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A881531EABD9FB00CB9562 /* SettingsViewController.swift */; };
+		18A881591EABDB3800CB9562 /* ClicableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A881571EABDB3800CB9562 /* ClicableTableViewCell.swift */; };
+		18A8815A1EABDB3800CB9562 /* ClicableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A881581EABDB3800CB9562 /* ClicableTableViewCell.xib */; };
+		18A8815C1EABE3B400CB9562 /* FootballCompetitionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A8815B1EABE3B400CB9562 /* FootballCompetitionsViewController.swift */; };
 		18C267051EA76F5400185EAD /* SportNewsDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18C267031EA76F5400185EAD /* SportNewsDataModel.xcdatamodeld */; };
 		18C267071EA7737500185EAD /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C267061EA7737500185EAD /* CoreDataManager.swift */; };
 		18F1C6AF1EA7E442002EA519 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F1C6AE1EA7E442002EA519 /* UILabelExtension.swift */; };
@@ -67,6 +72,11 @@
 		189F30611EA8DBFB001CF8B0 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaunchScreenViewController.swift; path = ViewControllers/LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		18A8814D1EABD57100CB9562 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/localizable.strings; sourceTree = "<group>"; };
 		18A881501EABD58F00CB9562 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/localizable.strings; sourceTree = "<group>"; };
+		18A881511EABD99200CB9562 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = Storyboards/Settings.storyboard; sourceTree = "<group>"; };
+		18A881531EABD9FB00CB9562 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ViewControllers/SettingsViewController.swift; sourceTree = "<group>"; };
+		18A881571EABDB3800CB9562 /* ClicableTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClicableTableViewCell.swift; path = Views/ClicableTableViewCell.swift; sourceTree = "<group>"; };
+		18A881581EABDB3800CB9562 /* ClicableTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ClicableTableViewCell.xib; path = Views/ClicableTableViewCell.xib; sourceTree = "<group>"; };
+		18A8815B1EABE3B400CB9562 /* FootballCompetitionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FootballCompetitionsViewController.swift; path = ViewControllers/FootballCompetitionsViewController.swift; sourceTree = "<group>"; };
 		18C267041EA76F5400185EAD /* SportNewsDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SportNewsDataModel.xcdatamodel; sourceTree = "<group>"; };
 		18C267061EA7737500185EAD /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		18F1C6AE1EA7E442002EA519 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UILabelExtension.swift; path = Views/UILabelExtension.swift; sourceTree = "<group>"; };
@@ -130,6 +140,8 @@
 				188430401EA7DC2400C609DC /* UIViewExtension.swift */,
 				188430471EA7E01800C609DC /* UIColorExtension.swift */,
 				18F1C6AE1EA7E442002EA519 /* UILabelExtension.swift */,
+				18A881571EABDB3800CB9562 /* ClicableTableViewCell.swift */,
+				18A881581EABDB3800CB9562 /* ClicableTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -139,6 +151,7 @@
 			children = (
 				188430431EA7DE7000C609DC /* LaunchScreen.storyboard */,
 				188430451EA7DEF300C609DC /* MainScreen.storyboard */,
+				18A881511EABD99200CB9562 /* Settings.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -214,6 +227,8 @@
 			isa = PBXGroup;
 			children = (
 				189F30611EA8DBFB001CF8B0 /* LaunchScreenViewController.swift */,
+				18A881531EABD9FB00CB9562 /* SettingsViewController.swift */,
+				18A8815B1EABE3B400CB9562 /* FootballCompetitionsViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -362,8 +377,10 @@
 			files = (
 				188430441EA7DE7000C609DC /* LaunchScreen.storyboard in Resources */,
 				18A8814C1EABD57100CB9562 /* localizable.strings in Resources */,
+				18A8815A1EABDB3800CB9562 /* ClicableTableViewCell.xib in Resources */,
 				1893B3221EA634F1001B7675 /* Assets.xcassets in Resources */,
 				188430461EA7DEF300C609DC /* MainScreen.storyboard in Resources */,
+				18A881521EABD99200CB9562 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,7 +530,10 @@
 			files = (
 				188430411EA7DC2400C609DC /* UIViewExtension.swift in Sources */,
 				18C267071EA7737500185EAD /* CoreDataManager.swift in Sources */,
+				18A881541EABD9FB00CB9562 /* SettingsViewController.swift in Sources */,
 				182FDDAD1EA935F600810CB9 /* RequestManager.swift in Sources */,
+				18A881591EABDB3800CB9562 /* ClicableTableViewCell.swift in Sources */,
+				18A8815C1EABE3B400CB9562 /* FootballCompetitionsViewController.swift in Sources */,
 				1893B31B1EA634F1001B7675 /* AppDelegate.swift in Sources */,
 				18F1C6AF1EA7E442002EA519 /* UILabelExtension.swift in Sources */,
 				182FDDBF1EA9445F00810CB9 /* ConnectionManager.swift in Sources */,

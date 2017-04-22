@@ -12,7 +12,7 @@ class RequestManager: NSObject {
     
     //MARK: GET
     
-    func getAvailableFootballCompetitions(parameters:[String:String]?, success:([Any]) -> Void, failure:(NSError)->Void) {
+    static func getAvailableFootballCompetitions(parameters:[String:String]?, success:([Any]) -> Void, failure:(NSError)->Void) {
         let cm = ConnectionManager()
         cm.requestString = Resources.FOOTBALL_COMPETITIONS
         cm.parameters = parameters

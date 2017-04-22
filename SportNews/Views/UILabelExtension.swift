@@ -16,4 +16,9 @@ extension UILabel {
         self.textColor = UIColor.black
     }
     
+    func setupCellTitleLabel() {
+        self.font = UIFont(name: "Helvetica", size: 12.0)
+        self.textColor = UIColor.black
+    }
+    
 }
