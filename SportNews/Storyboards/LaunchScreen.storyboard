@@ -36,20 +36,11 @@
                     </view>
                     <connections>
                         <outlet property="titleLabel" destination="3tW-9R-zV6" id="hMp-8S-LMQ"/>
-                        <segue destination="bcQ-vC-15D" kind="presentation" identifier="TapBarVCSegue" id="08q-C7-XBu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zrn-Oe-wgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-84" y="48"/>
-        </scene>
-        <!--TapBarVC-->
-        <scene sceneID="tlh-Mx-suo">
-            <objects>
-                <viewControllerPlaceholder storyboardName="MainScreen" referencedIdentifier="TapBarVC" id="bcQ-vC-15D" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vWF-xi-Qrz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="525" y="-134"/>
         </scene>
     </scenes>
 </document>
